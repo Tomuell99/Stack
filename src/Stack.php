@@ -18,6 +18,10 @@ class Stack {
     public function push($param) {
         $this->isEmpty = false;
     }
+
+    public function pop() {
+        $this->isEmpty = true;
+    }
 }
 
 ?>
