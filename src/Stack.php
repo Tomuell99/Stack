@@ -7,6 +7,7 @@
 class Stack {
 
     public $isEmpty = true;
+    public $object;
 
     /**
      * returns true if no item is in the stack
@@ -17,10 +18,12 @@ class Stack {
 
     public function push($param) {
         $this->isEmpty = false;
+        $this->object = $param;
     }
 
     public function pop() {
         $this->isEmpty = true;
+        return $this->object;
     }
 }
 
