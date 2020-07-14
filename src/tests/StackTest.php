@@ -88,7 +88,7 @@ class StackTest extends TestCase {
         $stackInstance->push(1);
         $stackInstance->top();
 
-        $this->assertEquals(true, $stackInstance->isEmpty());
+        $this->assertEquals(false, $stackInstance->isEmpty());
     }
 
     public function testTop() {
@@ -97,7 +97,7 @@ class StackTest extends TestCase {
         $stackInstance->push($initObject);
 
         $topObject = $stackInstance->top();
-        $this->assertEqauls($initObject, $topObject);
+        $this->assertEquals($initObject, $topObject);
     }
 
     public function testNullTop() {

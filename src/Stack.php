@@ -25,6 +25,10 @@ class Stack {
         $this->isEmpty = true;
         return array_pop($this->objects);
     }
+
+    public function top() {
+        return end($this->objects);
+    }
 }
 
 ?>
