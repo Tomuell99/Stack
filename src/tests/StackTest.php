@@ -67,13 +67,13 @@ class StackTest extends TestCase {
         $stackInstance->push($thirdObject);
 
         $firstPopObject = $stackInstance->pop(); // $thirdObject 
-        $this->assertEqual($firstPopObject, $thirdObject);
+        $this->assertEquals($firstPopObject, $thirdObject);
 
         $secondPopObject = $stackInstance->pop(); // $secondObject 
-        $this->assertEqual($secondPopObject, $secondObject);
+        $this->assertEquals($secondPopObject, $secondObject);
 
-        // $thirdPopObject = $stackInstance->pop(); // $firstObject 
-        $this->assertEqual($thirdPopObject, $firstObject);
+        $thirdPopObject = $stackInstance->pop(); // $firstObject 
+        $this->assertEquals($thirdPopObject, $firstObject);
     }
 
     public function testPopEmptyStack() {
