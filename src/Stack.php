@@ -13,7 +13,7 @@ class Stack {
      * returns true if no item is in the stack
      */
     public function isEmpty() {
-        return $this->isEmpty;
+        return count($this->objects) <= 0;
     }
 
     public function push($param) {

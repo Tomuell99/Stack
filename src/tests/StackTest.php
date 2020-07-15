@@ -33,6 +33,15 @@ class StackTest extends TestCase {
         $this->assertEquals(false, $stackInstance->isEmpty());
     }
 
+    public function testIsEmptyFalseAfterPop() {
+        $stackInstance = new Stack;
+        $stackInstance->push(1);
+        $stackInstance->push(2);
+        $stackInstance->pop();
+
+        $this->assertEquals(false, $stackInstance->isEmpty());
+    }
+
     /**
      * test isEmpty with pushed and poped object
      */
